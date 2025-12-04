@@ -9,11 +9,19 @@ describe('Second Day', () => {
         solution = new Solution(new InputToRangesMapper());
     });
 
-    it('solves the sample for puzzle 1', async () => {
+    it('solves the sample for puzzle 1', () => {
         const input = FileReader.readFile('./day-02/example.txt');
 
         const result = solution.solve1(input);
 
         expect(result).toBe(1227775554);
+    });
+
+    it('solves simple custom sample', () => {
+        const input = '95-115';
+
+        const result = solution.solve1(input);
+
+        expect(result).toBe(33);
     });
 });
