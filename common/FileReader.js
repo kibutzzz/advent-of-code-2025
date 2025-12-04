@@ -1,9 +1,7 @@
-const fs = require('fs');
+import fs from 'fs';
 
-class FileReader {
+export default class FileReader {
     static readFile(file) {
         return fs.readFileSync(file, 'utf-8');
     }
-}   
-
-module.exports = { default: FileReader };
+}

@@ -3,11 +3,11 @@ const MAX_DIAL_VALUE = 100;
 const MIN_DIAL_VALUE = 0;
 
 
-class Solution {
+export default class Solution {
     
     solve1(text) {
         let dial = INITIAL_DIAL_VALUE;
-        totalTurns = 0;
+        let totalTurns = 0;
 
         const instructions = text.split('\n')
             .map(toInstruction());
@@ -82,5 +82,3 @@ function toInstruction() {
         return { direction, amount };
     }
 }
-
-module.exports = { default: Solution };

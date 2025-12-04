@@ -1,6 +1,6 @@
 
-const Solution = require("./Solution").default;
-const FileReader = require("../common/FileReader").default;
+import Solution from "./Solution.js";
+import FileReader from "../common/FileReader.js";
 
 describe("First Day", () => {
     it("solves the sample", async () => {

@@ -1,5 +1,5 @@
 
-const FileReader = require("./FileReader").default;
+import FileReader from "./FileReader.js";
 
 describe("FileReader", () => {
     it("reads a file and returns its content", async () => {
