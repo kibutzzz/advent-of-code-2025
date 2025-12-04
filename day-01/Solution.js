@@ -3,7 +3,7 @@ const MAX_DIAL_VALUE = 100;
 const MIN_DIAL_VALUE = 0;
 
 
-class Solution {
+export default class Solution {
     
     solve1(text) {
         let dial = INITIAL_DIAL_VALUE;
@@ -82,5 +82,3 @@ function toInstruction() {
         return { direction, amount };
     }
 }
-
-export default Solution;
