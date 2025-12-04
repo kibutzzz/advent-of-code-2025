@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 class FileReader {
     static readFile(file) {
@@ -6,4 +6,4 @@ class FileReader {
     }
 }   
 
-module.exports = { default: FileReader };
+export default FileReader;

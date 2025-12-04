@@ -7,7 +7,7 @@ class Solution {
     
     solve1(text) {
         let dial = INITIAL_DIAL_VALUE;
-        totalTurns = 0;
+        let totalTurns = 0;
 
         const instructions = text.split('\n')
             .map(toInstruction());
@@ -83,4 +83,4 @@ function toInstruction() {
     }
 }
 
-module.exports = { default: Solution };
+export default Solution;
